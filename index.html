@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Bible Exposition</title>
+    <meta
+      name="description"
+      content="Creative Bible Exposition offers thoughtful introductions, reports, and support for accessible Bible study."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Creative Bible Exposition home">
+        <img class="brand-logo" src="assets/cbe-logo.png" alt="" aria-hidden="true" />
+        <span>Creative Bible Exposition</span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-controls="primary-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-menu" aria-label="Main menu">
+        <a href="#introduction">Introduction</a>
+        <a href="#reports">Timeline/Reports</a>
+        <a href="#support">Support</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <h1 id="page-title">Creative Bible Exposition</h1>
+          <p class="hero-quote">
+            "My goal is to help ordinary preachers who have little access to
+            resources or higher education. Since many cannot attend Bible schools,
+            I teach a simple study method that uses only the Bible and engages
+            both the left and right sides of the brain."
+          </p>
+          <p class="hero-credit">Dr. Yap Beng Shin</p>
+          <div class="hero-actions" aria-label="Page actions">
+            <a class="button button-primary" href="#introduction">Read Introduction</a>
+            <a class="button button-secondary" href="#reports">View Timeline/Reports</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" id="introduction" aria-labelledby="introduction-title">
+        <div class="section-shell intro-layout">
+          <figure class="intro-photo">
+            <img
+              src="assets/introduction-main.png"
+              alt="Student writing exposition notes beside a highlighted study document"
+            />
+          </figure>
+          <div class="intro-content">
+            <h2 id="introduction-title">Introduction</h2>
+            <p>
+              Creative Bible Exposition is shaped for in-depth study and clear
+              exposition. Each study begins with the Biblical text, follows the
+              background, and turns it into a relatable sermon.
+            </p>
+            <div class="note-panel">
+              <p>
+                The aim is simple: Use Right and Left brain to make bible study
+                exiting and effective without making it shallow, and make
+                application concrete without losing the wonder of Scripture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell reports" id="reports" aria-labelledby="reports-title">
+        <div class="section-heading">
+          <h2 id="reports-title">Timeline/Reports</h2>
+        </div>
+        <div class="report-list" aria-label="Timeline and report highlights">
+          <article class="report-item">
+            <span class="report-number">01</span>
+            <div class="report-entry">
+              <time datetime="2026-06-17">June 17-19, 2026</time>
+              <h3>Evangelical Christian College, Lalitpur-18, Nepal</h3>
+              <a
+                class="report-attachment"
+                href="https://creative-bible-exposition.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View report
+              </a>
+            </div>
+          </article>
+          <article class="report-item report-continuation">
+            <span class="report-number">...</span>
+            <div class="report-entry">
+              <h3>To be continued</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="support-band" id="support" aria-labelledby="support-title">
+        <div class="section-shell support-layout">
+          <div class="support-copy">
+            <h2 id="support-title">Support</h2>
+            <p>
+              Support this work through prayer, or sending a note about what would
+              help your Bible study Community.
+            </p>
+            <div class="contact-box" aria-labelledby="contact-box-title">
+              <h3 id="contact-box-title">Get in Touch</h3>
+              <dl class="contact-details">
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:abishekgtamang@gmail.com">abishekgtamang@gmail.com</a>
+                    <a href="mailto:moktanamit1234@gmail.com">moktanamit1234@gmail.com</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd>
+                    <a href="tel:+9779826236390">9826236390</a>
+                    <a href="tel:+9779826264642">9826264642</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Kathmandu, Nepal</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <form class="support-form" aria-label="Support message form">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Share a topic, question, or encouragement"
+              ></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Creative Bible Exposition</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
